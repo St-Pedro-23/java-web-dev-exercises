@@ -26,5 +26,12 @@ public class Alice {
         } else {
             System.out.println("My apologies, " + word + " has not been found within the text.");
         }
+
+        System.out.println("The position of " + word + " is " + firstLower.indexOf(wordNext) + ".");
+        System.out.println("The length of " + word + " is " + wordNext.length() + " characters.");
+
+        String firstFinal = firstLower.replaceAll(wordNext, "");
+        System.out.println("Without " + word + ", the sentence looks like this: ");
+        System.out.println(firstFinal);
     }
 }
